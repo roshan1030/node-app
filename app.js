@@ -25,7 +25,7 @@ const express = require('express');
            text-align: center;
          }
          h1 {
-           color: #333;
+           color: #FFFF00;
            margin-bottom: 20px;
          }
          p {
