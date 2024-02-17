@@ -35,6 +35,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
+            docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
             docker pull roshan1030/node:latest
             docker stop dazzling_feistel || true
             docker rm dazzling_feistel || true
