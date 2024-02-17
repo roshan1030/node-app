@@ -38,4 +38,4 @@ jobs:
             docker pull roshan1030/node:latest
             docker stop dazzling_feistel || true
             docker rm dazzling_feistel || true
-            docker run -d --name nodeapp -p 3000:3000 node:latest
+            docker run -d --name roshan1030/node -p 3000:3000 node:latest
